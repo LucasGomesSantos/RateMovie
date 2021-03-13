@@ -1,0 +1,109 @@
+section.repository-list{
+    margin: 40px;
+
+    h1 {
+        margin-top: -80px;
+        margin-bottom: 24px;
+        font-size: 30px;
+    }
+
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 24px;
+        font-size: 14px;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        list-style: none;
+    }
+
+    ul li {
+        background-color: rgba(255, 255, 255, 0.027);
+        display: inline-block;
+        width: 100%;
+        max-width: 350px;
+        cursor: pointer;   
+        box-shadow: 5px 4px 8px #ff000054;
+    }
+
+    ul li img {
+        width: 100%;
+        transform: scale(0.9);
+        transition : all ease 0.2s;
+    }
+
+
+    ul li img:hover{
+        transform: scale(1);
+     }
+
+     ul li button {
+        background: #57ade6;
+        height: 20px;
+        border-radius:10px;
+        padding: 0 16px;
+        color: #FFF;
+        font-weight: 500;
+        margin-top: 5px;
+        width: 50%;
+        margin-left: 25%;
+        transition: background-color 0.2s;
+    }
+
+    ul li button:hover {
+        filter: brightness(90%);
+    }
+
+    ul li strong {
+        display: block;
+        margin-bottom: 16px;
+        color: #ffffff;
+        padding: 2px;
+    }
+
+    ul li p + strong {
+        margin-top: 32px;
+
+    }
+
+    ul li p {
+        color: rgb(255, 255, 255);
+        line-height: 16px;
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    @media (max-width: 860px){
+        ul{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .inpNota{
+        background: #232129;
+        border-radius: 10px;
+        position: absolute;
+        top: 90%;
+        border: 2px solid #232129;
+        color: #fff;
+        padding: 13px;
+        width: 66%;
+    }
+
+    .envNota{
+        background: #57ade6;
+        position: absolute;
+        top: 90%;
+        left: 70%;
+        height: 40px;
+        border-radius: 10px;
+        color: #FFF;
+        font-weight: 700;
+        width: 15%;
+        transition: background-color 0.2s;
+    }
+
+}
