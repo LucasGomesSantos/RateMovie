@@ -1,4 +1,4 @@
-# RatedMovies
+# RateMovie
  Consumindo API TMDB
 
 yarn install 
